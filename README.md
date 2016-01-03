@@ -26,3 +26,7 @@ Also has a Vim plugin for writing Hack code.
 * Test out the box by going to a different folder, running `vagrant init server4001/hhvm-010`, and changing the `Vagrantfile` to fit your needs. Next, run `vagrant up`, and ensure everything is working.
 * Create a new version on Atlas.
 * Add a new provider to the version. The type should be `virtualbox`. Upload the box file.
+
+### Todos:
+
+* Switch HHVM from using a port to using a socket.
