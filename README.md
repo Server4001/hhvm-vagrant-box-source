@@ -1,6 +1,8 @@
 # HHVM Vagrant Box
 
-### The source environment used for my vagrant box on Atlas
+### The source environment used for my vagrant box on Atlas, server4001/ubuntu-hhvm.
+
+#### NOTE: This is the environment used to build the Vagrant box. If you are looking for an HHVM environment, just use the box: [server4001/ubuntu-hhvm](https://atlas.hashicorp.com/server4001/boxes/ubuntu-hhvm).
 
 Comes with:
 
@@ -17,8 +19,8 @@ Also has a Vim plugin for writing Hack code.
 ### Packaging the box:
 
 * `vagrant up`
-* Make any changes you need to the box. Be sure to reflect these changes in the Ansible provisioning scripts.
-* Before packaging up the box, ssh in, and run the commands that are in the comments at the end of `Vagrantfile`.
+* Make any changes you need to the box. Be sure to reflect these changes in the provisioning script.
+* Before packaging up the box, ssh in, and run the commands that are at the end of `Vagrantfile`.
 * Package up the box with `vagrant package --output server4001-hhvm-0.1.0.box`. Replace `0.1.0` with the version number.
 * Destroy the vm with `vagrant destroy`.
 * Add the new box to vagrant's local list with: `vagrant box add server4001/hhvm-010 server4001-hhvm-0.1.0.box`. Again, replace `010` and `0.1.0` with the version number.
