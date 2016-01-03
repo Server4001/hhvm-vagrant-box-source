@@ -1,0 +1,14 @@
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+colorscheme TomorrowNightEighties
+let mapleader=","
+set number
+set numberwidth=2
+set tabstop=4
+set softtabstop=4
+set expandtab
+set cursorline
+set incsearch
+set hlsearch
+nnoremap <leader><space> :nohlsearch<CR>
