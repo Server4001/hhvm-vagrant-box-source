@@ -278,3 +278,14 @@ sudo cp /vagrant/config/bash/root.bashrc /root/.bashrc
 
 # Install PHPUnit via composer.
 composer global require phpunit/phpunit
+
+# Clean up HHVM build folder.
+rm -rf /opt/build-hhvm/ocaml-4.02.1/
+rm -rf /opt/build-hhvm/dev/curl/
+rm -rf /opt/build-hhvm/dev/fribidi-0.19.6
+rm -rf /opt/build-hhvm/dev/google-glog/
+rm -rf /opt/build-hhvm/dev/jemalloc-3.6.0/
+rm -rf /opt/build-hhvm/dev/hhvm/
+sudo rm -rf /opt/build-hhvm/dev/share/
+sudo rm -rf /opt/build-hhvm/dev/include/
+sudo rm -rf /opt/build-hhvm/dev/bin/
