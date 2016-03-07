@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# HHVM install branch/tag.
+export HHVM_INSTALL_BRANCH_NAME="HHVM-3.12.0"
+
 # Install pre-requisites.
 sudo apt-get update -y
 sudo apt-get install -y vim curl python-software-properties tree
@@ -56,7 +59,7 @@ mkdir dev
 cd dev
 git clone git://github.com/facebook/hhvm.git --depth=1
 cd hhvm
-git checkout HHVM-3.11
+git checkout $HHVM_INSTALL_BRANCH_NAME
 git pull
 git submodule update --init --recursive
 export CMAKE_PREFIX_PATH=`pwd`/..
