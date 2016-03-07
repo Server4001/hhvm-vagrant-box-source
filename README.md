@@ -7,9 +7,9 @@
 Comes with:
 
 * Ubuntu 12.04
-* HHVM v3.11.0
-* Nginx v1.8.0
-* MySQL v5.5.46
+* HHVM v3.12.0 (rel)
+* Nginx v1.8.1
+* MySQL v5.5.47
 * Beanstalkd v1.4.6
 * Redis v2.2.12
 * Memcached v1.4.13
