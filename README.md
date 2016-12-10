@@ -29,5 +29,11 @@ Also has a Vim plugin for writing Hack code.
 * Test out the box by going to a different folder, running `vagrant init server4001/hhvm-100`, and changing the `Vagrantfile` to fit your needs. Next, run `vagrant up`, and ensure everything is working.
 * Create a new version on Atlas.
 * Add a new provider to the version. The type should be `virtualbox`. Upload the box file.
+* Add a corresponding version tag to git.
+
+### MySQL root credentials:
+
+* Username: root
+* Password: password
 
 ### Todos:
