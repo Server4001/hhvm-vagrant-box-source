@@ -2,9 +2,9 @@
 # vi: set ft=ruby :
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "hashicorp/precise64"
-  config.vm.box_version = "1.1.0"
-  config.vm.provision :shell, path: "provision.sh", privileged: false
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.box_version = "20160208.0.0"
+  config.vm.provision :shell, path: "provision.sh", privileged: true
   config.vm.network :private_network, ip: "192.168.35.39"
   config.vm.network :forwarded_port, guest: 22, host: 7299
   config.vm.synced_folder "./", "/vagrant", mount_options: ["dmode=775,fmode=664"]

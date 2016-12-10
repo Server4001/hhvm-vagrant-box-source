@@ -14,8 +14,8 @@
 ## Examples:
 ##   "hhvm"   Custom 'hhvm' user
 ##   "nobody" RHEL/CentOS 'www-data' equivalent
-#RUN_AS_USER="www-data"
-#RUN_AS_GROUP="www-data"
+RUN_AS_USER="vagrant"
+RUN_AS_GROUP="vagrant"
 
 ## Add additional arguments to the hhvm service start up that you can't put in CONFIG_FILE for some reason.
 ## Default: ""
