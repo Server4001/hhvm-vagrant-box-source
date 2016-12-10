@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # HHVM install branch/tag.
-export HHVM_INSTALL_BRANCH_NAME="HHVM-3.12.0"
+export HHVM_INSTALL_BRANCH_NAME="HHVM-3.15.3"
 
 # Install pre-requisites.
 sudo apt-get update -y
