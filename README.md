@@ -21,7 +21,7 @@ Also has a Vim plugin for writing Hack code.
 
 * `vagrant up`
 * Make any changes you need to the box. Be sure to reflect these changes in the provisioning script.
-* Before packaging up the box, ssh in, and run the commands that are at the end of `Vagrantfile`.
+* Before packaging up the box, ssh in, and run the commands that are at the end of `provision.sh`.
 * Package up the box with `vagrant package --output server4001-hhvm-1.0.0.box`. Replace `1.0.0` with the version number.
 * Destroy the vm with `vagrant destroy -f`.
 * Add the new box to vagrant's local list with: `vagrant box add server4001/hhvm-100 server4001-hhvm-1.0.0.box`. Again, replace `100` and `1.0.0` with the version number.

@@ -124,3 +124,11 @@ cp /vagrant/config/bash/root.bashrc /root/.bashrc
 # Chown vagrant user's files and folders.
 chown -R vagrant: /home/vagrant/.vim
 chown vagrant: /home/vagrant/.bashrc
+
+# TODO : Before packaging up the box, SSH into the VM and run these commands:
+# sudo apt-get clean
+# sudo dd if=/dev/zero of=/EMPTY bs=1M
+# sudo rm -f /EMPTY
+# sudo su
+# history -c && exit
+# cat /dev/null > ~/.bash_history && history -c && exit

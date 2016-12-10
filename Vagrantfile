@@ -15,11 +15,3 @@ Vagrant.configure(2) do |config|
     vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
   end
 end
-
-# TODO : Before packaging up the box, SSH into the VM and run these commands:
-# sudo apt-get clean
-# sudo dd if=/dev/zero of=/EMPTY bs=1M
-# sudo rm -f /EMPTY
-# sudo su
-# history -c && exit
-# cat /dev/null > ~/.bash_history && history -c && exit
