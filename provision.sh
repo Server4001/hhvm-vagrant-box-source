@@ -33,7 +33,7 @@ echo mysql-community-server mysql-community-server/root-pass password password |
 echo mysql-community-server mysql-community-server/re-root-pass password password | debconf-set-selections
 dpkg -i mysql-apt-config_0.6.0-1_all.deb
 apt-get update
-apt-get install -y mysql-server augeas-tools
+apt-get install -y --force-yes mysql-server augeas-tools
 augtool set /etc/mysql/my.cnf/target[3]/character-set-server utf8
 augtool set /etc/mysql/my.cnf/target[3]/collation-server utf8_unicode_ci
 rm mysql-apt-config_0.6.0-1_all.deb
@@ -115,6 +115,7 @@ cp /vagrant/config/vim/TomorrowNightEighties.vim /root/.vim/colors/TomorrowNight
 
 # Add custom Vim config.
 cp /vagrant/config/vim/vimrc /home/vagrant/.vimrc
+chown vagrant:vagrant /home/vagrant/.vimrc
 cp /vagrant/config/vim/vimrc /root/.vimrc
 
 # Custom bashrc.
